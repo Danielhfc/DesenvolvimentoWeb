@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <script type="text/javascript"> 
+      function reajusteSalario(salario){
+        if (salario[0] <= 280){
+          salario[1] = 1.2;
+          salario[2] = salario[0] * salario[1];
+          salario[3] = salario[2] - salario[0];
+        }
+        else if (salario[0] > 280 && salario[0] < 700){
+          salario[1] = 1.15;
+          salario[2] = salario[0] * salario[1];
+          salario[3] = salario[2] - salario[0];
+        }
+        else if (salario[0] >= 700 && salario[0] < 1500){
+          salario[1] = 1.10;
+          salario[2] = salario[0] * salario[1];
+          salario[3] = salario[2] - salario[0];
+        }
+        else if (salario[0] >= 1500){
+          salario[1] = 1.05;
+          salario[2] = salario[0] * salario[1];
+          salario[3] = salario[2] - salario[0];
+        }
+        return(salario);
+      }
+    </script>
+  </head>
+  <body>
+    
+    <script type="text/javascript"> 
+      var salario = [];
+      salario[0] = prompt("Digite o salário do colaborador: ", "");
+
+      salario = reajusteSalario(salario);
+
+      document.write("Salário antigo: " + salario[0]);
+      document.write("<br>Aumento Percentual: " + salario[1]);
+      document.write("<br>Valor Aumentado: " + salario[3]);
+      document.write("<br>Salário novo: " + salario[2]);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+body{
+  background: #EBF6FD;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  }
+  .cards img {
+  margin: 10px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+  min-width: 25vw;
+  }
+ 
+
+.media {
+  display: flex;
+  align-items: flex-start;
+  background: #F6F3EB;
+  padding: 1em;
+  border-radius: 3px;
+  max-width: 100%;
+  }
+  .media-object {
+  margin-right: 1em;
+  }
+  .media-body {
+  flex: 1;
+  }
+  .media-heading {
+  margin: 0 0 .5em;
+  }
+ 

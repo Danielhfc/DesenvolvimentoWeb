@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <script type="text/javascript"> 
+      function soma(str){
+        var cont = 0;
+        var pos = 0;
+
+        while (true) {
+          pos = str.indexOf(substr, 0);
+          if (pos >= 0){
+            cont++;
+            pos++;
+          }
+          else break;
+        }
+        return cont
+      }
+    </script>
+  </head>
+  <body>
+    
+    <script type="text/javascript"> 
+      var str = prompt("Digite uma string: ", "");
+      var substr = prompt("Digite a substring: ", "");
+      
+      var quant = conta_substr(str, substr);
+
+      document.write(quant);
+
+    </script>
+  </body>
+</html>

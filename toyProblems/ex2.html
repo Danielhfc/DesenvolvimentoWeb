@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <script type="text/javascript"> 
+      function calcularIdade(dia, mes, ano){
+        var idade;
+
+        var d = new Date(),
+        ano_atual = d.getFullYear(),
+        mes_atual = d.getMonth() +1,  
+        dia_atual = d.getDate(),
+
+        ano = +ano,
+        mes = +mes,
+        dia = +dia,
+
+        idade = ano_atual - ano;
+
+        if (mes_atual < mes || mes_atual == mes && dia_atual < dia) {
+          idade--;
+        } 
+
+        if(idade < 0){
+          return 0;
+        } 
+        
+        else{
+           return idade;
+          }
+      }
+    </script>
+  </head>
+  <body>
+    
+    <script type="text/javascript"> 
+      var dia = prompt("Digite seu dia de nascimento: ", "");
+      var mes = prompt("Digite seu mês de nascimento: ", "");
+      var ano = prompt("Digite seu ano de nascimento: ", "");
+      
+      var idade;
+
+      idade = calcularIdade(dia, mes, ano);
+
+      document.write(idade);
+
+    </script>
+  </body>
+</html>

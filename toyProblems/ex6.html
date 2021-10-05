@@ -1,0 +1,22 @@
+<html>
+  <head>
+  </head>
+  <body>
+    
+    <script type="text/javascript"> 
+    var i = -1;
+    var arr = [];
+    do{
+      i++;
+      arr[i] = prompt("Digite um número qualquer. 0 termina o loop ", ""); 
+    }
+    while(arr[i] != 0); 
+
+    var soma = 0;
+        for(var j = 0; j < (arr.length); j++){
+          soma += parseInt(arr[j], 10);
+        }
+    document.write("Media dos números do array: " + (soma/(arr.length-1)));
+    </script>
+  </body>
+</html>

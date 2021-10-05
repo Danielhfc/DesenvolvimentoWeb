@@ -1,0 +1,46 @@
+ul{
+  list-style-type: none;
+}
+
+.zoom-normal{
+  width: 100px;
+  height: 100px;
+}
+
+.zoom-diminuido{
+  width: 50px;
+  height: 50px;
+}
+
+.zoom-aumentado{
+  width: 150px;
+  height: 150px;
+}
+
+body{
+  background: #EBF6FD;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  padding: 1rem;
+}
+
+header img{
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+ 
+table, th, td {
+  border:1px solid black;
+}
+
+.coloracao{
+  background-color: #009dff
+}

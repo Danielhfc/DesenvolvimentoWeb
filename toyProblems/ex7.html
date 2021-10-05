@@ -1,0 +1,26 @@
+<html>
+  <head>
+  </head>
+  <body>
+    
+    <script type="text/javascript"> 
+    var maior = 0;
+    var maior_nome = 0;
+    var nome = [];
+    var peso = [];
+    
+    for(var i = 0; i < 5; i++){
+      nome[i] = prompt("Digite um nome da pessoa ", ""); 
+      peso[i] = prompt("Digite o peso da pessoa ", ""); 
+
+      if(peso[i] > maior){
+        maior_peso = peso[i];
+        maior_nome = nome[i];
+      }
+    }
+
+    document.write("Nome da pessoa: " + maior_nome);
+    document.write("<br>Peso da pessoa: " + maior_peso);
+    </script>
+  </body>
+</html>

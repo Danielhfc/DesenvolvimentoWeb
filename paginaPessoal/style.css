@@ -1,0 +1,162 @@
+body{
+  background: #EBF6FD;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+
+#main{
+  display: flex;
+  flex: 1;
+}
+
+#main article{
+  flex: 1;
+}
+
+#main nav, #main aside{
+  flex: 0 0 20vw;
+}
+
+#main nav{
+  order: -1;
+}
+
+header{
+  height: 15vh;
+}
+
+footer{
+  height: 10vh;
+}
+
+header, footer, article, nav, aside{
+  padding: 1em;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.navbar{
+  background: rgb(181, 181, 181);
+  padding-bottom: 1em;
+  text-align: center;
+  padding-top: 1em;
+
+}
+
+.navbar a{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.875rem;
+  line-height: 2.1875rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  text-decoration: underline;
+  color: #032F55;
+  font-size: 2.375rem;
+}
+
+.lista-navbar li{
+  display: inline-block;
+  margin-right: 100px;
+}
+
+.meu-nome{
+  flex: 1;
+  border-top: 1px solid #000;
+  text-align: center;
+}
+
+.meu-nome h1{
+  color: #032F55;
+}
+
+nav ul li{
+  list-style-type: disc;
+}
+
+nav ul li a{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.875rem;
+  line-height: 2.1875rem;
+  color: #000;
+}
+
+nav ul li a:hover{
+  text-decoration: underline;
+  color: #033968;
+}
+
+.card{
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  padding: 0;
+}
+
+.card h2{
+  color: #032F55;
+}
+
+.card img{
+  border-radius: 15px;  
+  min-width: 100%;
+}
+
+.card-conteudo{
+  margin-left: 30px;
+  padding-right: 100px;
+}
+
+.card-conteudo ul li{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.5125rem;
+  color: #000;
+  text-align: justify;
+}
+
+.card-conteudo ul li:first-letter{
+  font-size: 1.825rem;
+  line-height: 2.3125rem;
+}
+
+.card-conteudo p{
+  padding-inline-start: 40px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  text-align: justify;
+  color: #000;
+}
+
+.card-conteudo p:first-letter{
+  font-size: 1.825rem;
+  line-height: 2.3125rem;
+}
+
+.rodape{
+  border-top: 1px solid #000;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.rodape h3{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  color: #000;
+}
